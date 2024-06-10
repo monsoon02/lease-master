@@ -26,7 +26,7 @@ public class FacilityController {
         LambdaQueryWrapper<FacilityInfo> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(type!=null,FacilityInfo::getType,type);
         List<FacilityInfo> list = service.list(queryWrapper);
-
+        #在github上修改
         return Result.ok(list);
     }
 
