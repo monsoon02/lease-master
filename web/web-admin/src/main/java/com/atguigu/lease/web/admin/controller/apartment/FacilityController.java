@@ -27,6 +27,7 @@ public class FacilityController {
         queryWrapper.eq(type!=null,FacilityInfo::getType,type);
         List<FacilityInfo> list = service.list(queryWrapper);
         #在github上修改
+            //11111
         return Result.ok(list);
     }
 
